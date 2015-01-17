@@ -14,5 +14,4 @@ angular.module('hackerNews', ['ui.router', 'templates'])
 				});
 
 			$urlRouterProvider.otherwise('home');
-	}])
-
+}])
