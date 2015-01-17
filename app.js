@@ -1,4 +1,4 @@
-angular.module('hackerNews', [])
+angular.module('hackerNews', ['ui.router'])
 	.factory('posts', [function() {
 		var o = {
 			posts: []
