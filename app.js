@@ -1,5 +1,5 @@
 angular.module('hackerNews', ['ui.router'])
-	.config(['$stateProvider', 'urlRouterProvider',
+	.config(['$stateProvider', '$urlRouterProvider',
 		function($stateProvider, $urlRouterProvider) {
 			$stateProvider
 				.state('home', {
