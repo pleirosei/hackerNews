@@ -1,6 +1,6 @@
 angular.module('hackerNews')
 .controller('PostsCtrl', [
-	'$scope', 'posts', 'post'
+	'$scope', 'posts', 'post',
 	function($scope, posts, post) {
 		$scope.post = post;
 

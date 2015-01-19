@@ -1,5 +1,7 @@
 class CommentsController < ApplicationController
 
+	respond_to :json
+
 	def create
 		comment = post.comments.create(comment_params)
 		respond_with post, comment
