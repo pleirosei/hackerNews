@@ -28,7 +28,7 @@
 	</div>
 	<div class="form-group">
 		<input type="url" name="input" class="form-control" placeholder="Link" ng-model="link">
-			<span class="error" ng-show="myLink.input.$error.url">
+			<span class="error" ng-show="myLink.input.$error.url">Not valid url!></span>
 		</input>
 	</div>
 	<button type="submit" class="btn btn-primary" ng-disabled="!myLink.input.$valid">Post</button>
