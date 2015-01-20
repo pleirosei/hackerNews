@@ -20,14 +20,16 @@
 	</span>
 </div>
 			
-<form ng-submit="addPost()" style="margin-top:30px;">
+<form name="myLink" ng-submit="addPost()" style="margin-top:30px;">
 	<h3>Add a new post</h3>
 
 	<div class="form-group">
 		<input type="text" class="form-control" placeholder="Title" ng-model="title"></input>
 	</div>
 	<div class="form-group">
-		<input type="text" class="form-control" placeholder="Link" ng-model="link" http-prefix></input>
+		<input type="url" name="input" class="form-control" placeholder="Link" ng-model="link">
+			<span class="error" ng-show="myLink.input.$error.url">
+		</input>
 	</div>
-	<button type="submit" class="btn btn-primary">Post</button>
+	<button type="submit" class="btn btn-primary" ng-disabled="!myLink.input.$valid">Post</button>
 </form>
